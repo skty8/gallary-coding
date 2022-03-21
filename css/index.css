@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background: #000;
+    color: #fff;
+}
+
+.main_visual {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* スクロール時アニメーション */
+.fadeup {
+    animation: fadeUpAnime 2s 0.7s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* スクロール時に表示される要素*/
+.fadeup_trigger {
+    opacity: 0;
+}
+
+.top_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding:20px 20px 0 30px ;
+    transition: 1s ease-in-out;
+}
+
+/* topmenuフェードイン */
+.fadein{
+    opacity:1;
+    transition: 1s ease-in-out;
+}
+
+.burger_menu{
+    position: relative;
+    width: 42px;
+    height: 42px;
+}
+
+.burger_top,
+.burger_middle,
+.burger_bottom{
+    position: absolute;
+    background: #fff;
+    width:30px;
+    height: 1px;
+}
+
+.burger_top{
+    top:10px;
+}
+
+.burger_middle{
+    top:20px;
+}
+
+.burger_bottom{
+    bottom:10px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    margin: 50px 0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 32px;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 45px;
+}
+
+.wrap {
+    padding: 0 30px 0 30px;
+}
+
+.date_en {
+    margin: 0 0 20px 0;
+}
+
+.place {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.date_jp {
+    line-height: 24px;
+    margin: 0 0 80px 0;
+}
+
+.gallery {
+    margin: 0 0 280px 0;
+}
+
+.gallery::after {
+    display: none;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: url("../images/bg.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 433px 209px 315px 473px 394px 209px;
+    gap: 30px;
+}
+
+.access {
+    margin: 0 0 280px 0;
+}
+
+.access_place {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.address {
+    margin: 0 0 20px 0;
+}
+
+.access_contact_details {
+    margin: 0 0 30px 0;
+}
+
+.map a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 15px 82px;
+}
+
+.contact {
+    margin: 0 0 200px 0;
+}
+
+.contact_container li:first-of-type {
+    margin: 0 0 20px 0;
+}
+
+.contact_container li a {
+    display: block;
+    border: 1px solid #fff;
+    padding: 30px 62px;
+}
+
+footer {
+    border-top: 1px solid #fff;
+    font-size: 12px;
+    padding: 60px 30px;
+}
+
+.footer_contact_detail {
+    margin: 0 0 30px 0;
+}
+
+.sns {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.sns li {
+    margin-right: 15px;
+}
+
+.copyright {
+    display: flex;
+}
+
+.copyright li {
+    margin-right: 30px;
+}

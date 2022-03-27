@@ -17,15 +17,25 @@
 
 <body>
     <header>
-        <!-- ロゴ -->
+        <!-- ロゴ/バーガーメニュー -->
         <div class="top_menu">
-            <a href="#"><img src="images/logo.svg" alt="FA EXHIBITION ロゴ"></a>
-            <div class="burger_menu">
+            <a class="logo" href="#"><img src="images/logo.svg" alt="FA EXHIBITION ロゴ"></a>
+            <button class="burger_menu">
                 <span class="burger_top"></span>
                 <span class="burger_middle"></span>
                 <span class="burger_bottom"></span>
-            </div>
+            </button>
         </div>
+        <!-- ナビゲーション -->
+        <nav>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">INFORMATION</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">ACCESS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
         <!-- メイン画像 -->
         <div class="main_visual">
             <img src="images/mainvisual1.jpg" alt="ピンクの花束">
@@ -40,27 +50,34 @@
             FA EXHIBITION 2021
         </h1>
         <div class="container">
-            <section class="information fadeup_trigger">
-                <h2>INFORMATION</h2>
-                <p class="date_en">2021 JUL 1(THU)-3(SAT)<br>
-                    DAY1 10am-6pm OTHER 10am-5:30pm</p>
-                <p class="place">at PARK SIDE HALL</p>
-                <p class="date_jp">2021年7月1日(木)ー3日(土)<br>
-                    Day1 10時〜18時　その他 10時〜17時30分
-                </p>
+            <section class="information">
+                <div class="fadeup_trigger">
+                    <h2>INFORMATION</h2>
+                    <p class="date_en">
+                        <span>2021 JUL 1(THU)-3(SAT)</span><br>
+                        <span>DAY1 10am-6pm OTHER 10am-5:30pm</span>
+                    </p>
+                    <p class="place">at PARK SIDE HALL</p>
+                    <p class="date_jp">2021年7月1日(木)ー3日(土)<br>
+                        Day1 10時〜18時　その他 10時〜17時30分
+                    </p>
+                </div>
             </section>
+            <ul class="side_menu">
+                <li><a href="#">FOR VISITOR</a></li>
+                <li><a href="#">FOR EXHIBITOR</a></li>
+            </ul>
             <section class="gallery">
                 <h2 class="fadeup_trigger">GALLERY</h2>
                 <ul class="gallery_container wrap">
-                    <li><img class="fadeup_trigger" src="images/flower1.jpg" alt="オレンジの花"></li>
-                    <li><img class="fadeup_trigger" src="images/flower2.jpg" alt="オレンジ、白の花"></li>
-                    <li><img class="fadeup_trigger" src="images/flower3.jpg" alt="白、ピンク、赤の花"></li>
-                    <li><img class="fadeup_trigger" src="images/flower4.jpg" alt="色とりどりの花"></li>
-                    <li><img class="fadeup_trigger" src="images/flower5.jpg" alt="黄色の花"></li>
-                    <li><img class="fadeup_trigger" src="images/flower6.jpg" alt="赤、白の花"></li>
+                    <li class="flower1"><img class="fadeup_trigger" src="images/flower1.jpg" alt="オレンジの花"></li>
+                    <li class="flower2"><img class="fadeup_trigger" src="images/flower2.jpg" alt="オレンジ、白の花"></li>
+                    <li class="flower3"><img class="fadeup_trigger" src="images/flower3.jpg" alt="白、ピンク、赤の花"></li>
+                    <li class="flower4"><img class="fadeup_trigger" src="images/flower4.jpg" alt="色とりどりの花"></li>
+                    <li class="flower5"><img class="fadeup_trigger" src="images/flower5.jpg" alt="黄色の花"></li>
+                    <li class="flower6"><img class="fadeup_trigger" src="images/flower6.jpg" alt="赤、白の花"></li>
                 </ul>
             </section>
-
             <section class="access">
                 <h2>ACCESS</h2>
                 <p class="access_place">PARK SIDE HALL</p>
@@ -92,16 +109,19 @@
                 E-mail: info@xxxxxxx.jp
             </p>
         </address>
-        <ul class="sns">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-        <ul class="copyright">
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li><small>&copy; FA EXHIBITION</small></li>
-        </ul>
+        <div class="footer_flex">
+            <ul class="sns">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <ul class="copyright">
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li>&copy; FA EXHIBITION</li>
+            </ul>
+        </div>
     </footer>
+    <div class="bg"></div>
 </body>
 
 <script>

@@ -1,10 +1,4 @@
 $(document).ready(function () {
-// contactのリンクhover
-    // $('.contact_container li a').hover(
-    //     function () {
-    //         // $('.contact_container li a::before', '.contact_container li a::after').css('transform', 'translateX(10px)');
-    //         $('.contact_container li a::before').css('background', '#000');
-    //     });
 });
 
 // スクロール時の動作
@@ -80,6 +74,9 @@ $(document).on('click', '.burger_menu', function () {
         $('nav').addClass('burger_fadedown');
         $('nav').removeClass('burger_fadeup');
     }
+
+    // バーガーメニュー表示変化
+    $(this).toggleClass('active');
 });
 
 // 画面読み込み時

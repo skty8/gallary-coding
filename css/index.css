@@ -78,6 +78,7 @@ body {
     background: #fff;
     width: 30px;
     height: 1px;
+    transition:0.5s;
 }
 
 .burger_top {
@@ -90,6 +91,25 @@ body {
 
 .burger_bottom {
     bottom: 10px;
+}
+
+/* バーガーメニュークリック時 */
+.burger_menu.active .burger_top {
+    top: 20px;
+    right: 9px;
+    transform: rotate(-45deg);
+    width: 80%;
+}
+
+.burger_menu.active .burger_middle {
+  opacity: 0;
+}
+
+.burger_menu.active .burger_bottom{
+    right: 9px;
+    bottom: 21px;
+    transform: rotate(45deg);
+    width: 80%;
 }
 
 nav {
